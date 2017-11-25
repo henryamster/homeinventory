@@ -1,0 +1,12 @@
+{
+  "name": "homeInventory",
+  "version": "0.0.0",
+  "description": "Keep an inventory of all your junk!.",
+  "main": "server.js",
+  "repository": "",
+  "author": "henry fritz",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4"
+  }
+}
