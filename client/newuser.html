@@ -3,22 +3,27 @@
   <head>
     <title>Home Inventory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="/img/favicon.ico" type="image/x-icon"/>
       <link rel="stylesheet" href="/css/materialize.css" type="text/css" />
   <link rel="stylesheet" href="/css/style.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-storage.js"></script>
+
   </head>
   <body class="blue lighten-4">
     <div class="valign-wrapper">
-  <div class="container deep-orange lighten-3 z-depth-2 center main">
+  <div class="container deep-orange lighten-3 z-depth-2 main">
     
-    <div class="col s12"><h1 class="blue-text text-lighten-4 title">Home Inventory</h1></div>
-    <div class="row">
-    <h5 class="blue-text text-lighten-4">Sign Up</h5>
-     </div>
+    <div class="col s10 offset-s2 m8 offset-m4"><h1 class="white-text title center">Home Inventory</h1></div>
+    
       <div class="row">
     <form class="col s12">
       <div class="row">
+          <h5 class="blue-text text-lighten-4 center-align">Sign Up</h5>
         <div class="input-field col s10 offset-s2 m8 offset-m4 center-align blue-text text-lighten-4">
              <label for="username" class="blue-text text-lighten-4" >Email:</label>
           <input  id="username" type="text" class="validate">
@@ -41,22 +46,26 @@
       </div>
     </form>
   </div>
-        <div class="row hide-on-small-only">
-            <div class="col s2 m4"></div>
-          <div class="col s10  m8">
-            <p class="left-align blue-text text-lighten-4">
-             <b> Home Inventory </b> can be used to keep track of valuable items for many different uses: from insurance purposes to sorting by estimated value and building collections you can show off to your friends.
-            </p>
-            
-          </div>
-        </div>
+  <div class="row hide-on-small-only" >
         
+            
+          <div class="col  m6">
+            <p class="left-align blue-text text-lighten-4">
+             <b class="white-text title"> Home Inventory </b> can be used to keep track of valuable items for many different uses: from insurance purposes and sorting by estimated value to building collections you can show off to your friends.
+            </p>
+          </div>
+          
+          <div class="col m6">
+           <p class="left-align  blue-text text-lighten-4"> <b class="white-text title"> Home Inventory </b> is open source software, and the full project's source code is available at <a href="https://github.com/henryamster/homeinventory" class="white-text"><b>github.</b></a> </p>
+            </div>
+        
+     </div>   
         
         <!--footer-->
     <footer class="page-footer deep-orange lighten-3 ">
           <div class="footer-copyright deep-orange lighten-3 ">
-            <div class="container deep-orange lighten-3 right-align left-align blue-text text-lighten-4">
-            © 2014 Henry Fritz Design & Development
+            <div class="container deep-orange lighten-3 right-align left-align blue-text text-lighten-4 title">
+            © 2017 Henry Fritz Design & Development
             </div>
           </div>
         </footer>
@@ -68,17 +77,6 @@
   <script  src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 <script  src="/js/materialize.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBXnTXNX2VHn-eodm5r6ABv6Buhrm06fKM",
-    authDomain: "homeinventory-36de7.firebaseapp.com",
-    databaseURL: "https://homeinventory-36de7.firebaseio.com",
-    projectId: "homeinventory-36de7",
-    storageBucket: "homeinventory-36de7.appspot.com",
-    messagingSenderId: "139424858274"
-  };
-  firebase.initializeApp(config);
-</script>
+
   </body>
 </html>
