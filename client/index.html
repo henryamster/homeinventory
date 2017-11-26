@@ -3,6 +3,7 @@
   <head>
     <title>Home Inventory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon"/>
       <link rel="stylesheet" href="/css/materialize.css" type="text/css" />
   <link rel="stylesheet" href="/css/style.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -19,18 +20,31 @@
   
   </head>
   <body class="blue lighten-4">
+ 
     <div class="valign-wrapper">
   <div class="container deep-orange lighten-3 z-depth-2  main">
+     <!--nav-->
+  <div class="row">
+    
+    <div class="col s3 center-align white-text blin title ">View Inventory</div>
+    <div class="col s3 center-align white-text blin title "> New Item</div>
+    <div class="col s3 center-align white-text blin title ">Collections</div>
+    <div class="col s3 center-align blin title "><a id="logout" class="white-text" href="#">Log Out</a></div>
+  </div>
+  <!--end nav-->
+  
+  
     <div class="row">
     <div class="col s12"><h1 class="white-text  title center">Home Inventory</h1></div>
     </row>
       <div class="row">
+        <div id="appender"></div>
     <form class="col s12">
       <div class="row">
       
         <div class="input-field col s10 offset-s2 m8 offset-m4 right-align blue-text text-lighten-4">
-             <label for="username" class="blue-text text-lighten-4" >Email:</label>
-          <input  id="username" type="text" class="validate">
+             <label for="email" class="blue-text text-lighten-4" >Email:</label>
+          <input  id="email" type="text" class="validate">
         </div>
         <div class="input-field col s10 offset-s2 m8 offset-m4  center-align blue-text text-lighten-4">
           <label for="password" class="blue-text text-lighten-4">Password:</label>
@@ -40,7 +54,7 @@
           
         
         <div class="input-field col s10 offset-s2 m8 offset-m4   ">
-        <button class="btn waves-effect waves-light deep-orange-text lighten-4 blue lighten-4 " type=button" id="submit" >Submit
+        <button class="btn waves-effect waves-light deep-orange-text lighten-4 blue lighten-4 " type="button" id="submit">Submit
     <i class="material-icons right">send</i>
   </button>
   </div>
@@ -56,24 +70,23 @@
             
           </div>
         </div>
+        </div>
         
-        
-        <!--footer-->
-    <footer class="page-footer deep-orange lighten-3 ">
-   <div class="col s6 m4"><img id="logo"  src="/img/HI.svg">   </img></div>
+            <!--footer-->
+    <footer class="page-footer deep-orange lighten-3 "><div class="row">
+        <div class="col s6 m4"><img id="logo"  src="/img/HI.svg">   </img></div>
           <div class="footer-copyright deep-orange lighten-3 ">
-            <div class="container deep-orange lighten-3 right-align left-align blue-text text-lighten-4 title">
+            <div class="col s6 m8 deep-orange lighten-3 right-align  white-text title">
             © 2017 Henry Fritz Design & Development
             </div>
           </div>
-          
-          
+          </div>
         </footer>
     
     
     
   </div>
-  </div>
+  
   <script  src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 <script  src="/js/materialize.js"></script>
